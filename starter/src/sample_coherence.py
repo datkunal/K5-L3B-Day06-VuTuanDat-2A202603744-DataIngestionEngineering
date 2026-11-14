@@ -40,7 +40,18 @@ def main() -> None:
                          "chunk_chars": len(c.text), "chunk_text": c.text,
                          "coherence_0_2": "", "reason": ""})
     config.RESULTS.mkdir(parents=True, exist_ok=True)
-    with (config.RESULTS / "coherence_sample.csv").open("w", newline="", encoding="utf-8") as f:
+    out = config.RESULTS / "coherence_sample.csv"
+    # Never wipe manual labels: carry them over when the sampled chunk is unchanged.
+    if out.exists():
+        with out.open(encoding="utf-8", newline="") as f:
+            old = {(r["position_id"], r["strategy"]): r for r in csv.DictReader(f)}
+        for r in rows:
+            prev = old.get((r["position_id"], r["strategy"]))
+            if prev and prev["chunk_text"] == r["chunk_text"]:
+                r["coherence_0_2"], r["reason"] = prev["coherence_0_2"], prev["reason"]
+            elif prev and prev["coherence_0_2"]:
+                print(f"WARNING: chunk changed for {r['position_id']} {r['strategy']}; label must be redone")
+    with out.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)

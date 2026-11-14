@@ -1,5 +1,7 @@
 # Starter · PostgreSQL + pgvector
 
+> **Ghi chú bài làm:** các hàm TODO trong `src/` đã được hiện thực. Vector store dùng **Chroma** (`src/store.py`) thay cho pgvector vì máy làm bài không có Docker, nên `docker-compose.yml`, `init.sql`, `.env.example` và `scripts/check_setup.py` **không được dùng**. Cách chạy pipeline thật xem [README ở thư mục gốc](../README.md). Phần dưới đây là hướng dẫn gốc của starter.
+
 Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
 
 ## Cấu trúc
