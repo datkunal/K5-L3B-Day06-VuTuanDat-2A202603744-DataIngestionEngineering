@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Day 06: large/regenerable artifacts
+data/raw/
+storage/

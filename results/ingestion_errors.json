@@ -1,0 +1,7 @@
+[
+  {"stage": "vector_store", "time": "2026-11-14",
+   "error": "chromadb.errors.InternalError: Error constructing hnsw segment reader: Error loading hnsw index",
+   "cause": "Chroma 1.5.9 (Windows) cannot re-open a persisted HNSW index whose path contains non-ASCII characters (repo is under 'D:/AI thực chiến/'). Reproduced with a 2000-vector toy collection: ASCII path reopens fine, Unicode path fails.",
+   "fix": "src/config.py: Chroma directory = $DAY06_CHROMA_DIR, else <repo>/storage/chroma if ASCII, else %LOCALAPPDATA%/day06_chroma. The first index (created under the Unicode path) was deleted and everything re-ingested from scratch.",
+   "pages_affected": []}
+]

@@ -1,0 +1,286 @@
+{
+  "n_questions": 24,
+  "n_dev": 18,
+  "n_test": 6,
+  "n_filter": 6,
+  "n_filter_test": 2,
+  "problems": [],
+  "checks": [
+    {
+      "id": "d01",
+      "split": "dev",
+      "gold_page": [
+        19
+      ],
+      "evidence_found_on": [
+        19
+      ],
+      "filter": null
+    },
+    {
+      "id": "d02",
+      "split": "dev",
+      "gold_page": [
+        51
+      ],
+      "evidence_found_on": [
+        51
+      ],
+      "filter": null
+    },
+    {
+      "id": "d03",
+      "split": "dev",
+      "gold_page": [
+        53
+      ],
+      "evidence_found_on": [
+        53
+      ],
+      "filter": null
+    },
+    {
+      "id": "d04",
+      "split": "dev",
+      "gold_page": [
+        55
+      ],
+      "evidence_found_on": [
+        55
+      ],
+      "filter": null
+    },
+    {
+      "id": "d05",
+      "split": "dev",
+      "gold_page": [
+        55
+      ],
+      "evidence_found_on": [
+        55
+      ],
+      "filter": null
+    },
+    {
+      "id": "d06",
+      "split": "dev",
+      "gold_page": [
+        57
+      ],
+      "evidence_found_on": [
+        57
+      ],
+      "filter": null
+    },
+    {
+      "id": "d07",
+      "split": "dev",
+      "gold_page": [
+        57
+      ],
+      "evidence_found_on": [
+        57
+      ],
+      "filter": null
+    },
+    {
+      "id": "d08",
+      "split": "dev",
+      "gold_page": [
+        90
+      ],
+      "evidence_found_on": [
+        90
+      ],
+      "filter": null
+    },
+    {
+      "id": "d09",
+      "split": "dev",
+      "gold_page": [
+        89
+      ],
+      "evidence_found_on": [
+        89
+      ],
+      "filter": {
+        "ip_type": "patent"
+      }
+    },
+    {
+      "id": "d10",
+      "split": "dev",
+      "gold_page": [
+        103
+      ],
+      "evidence_found_on": [
+        103
+      ],
+      "filter": null
+    },
+    {
+      "id": "d11",
+      "split": "dev",
+      "gold_page": [
+        116
+      ],
+      "evidence_found_on": [
+        116
+      ],
+      "filter": null
+    },
+    {
+      "id": "d12",
+      "split": "dev",
+      "gold_page": [
+        117
+      ],
+      "evidence_found_on": [
+        117
+      ],
+      "filter": null
+    },
+    {
+      "id": "d13",
+      "split": "dev",
+      "gold_page": [
+        120
+      ],
+      "evidence_found_on": [
+        120
+      ],
+      "filter": {
+        "ip_type": "copyright"
+      }
+    },
+    {
+      "id": "d14",
+      "split": "dev",
+      "gold_page": [
+        163
+      ],
+      "evidence_found_on": [
+        163
+      ],
+      "filter": {
+        "ip_type": "trademark"
+      }
+    },
+    {
+      "id": "d15",
+      "split": "dev",
+      "gold_page": [
+        147
+      ],
+      "evidence_found_on": [
+        147
+      ],
+      "filter": null
+    },
+    {
+      "id": "d16",
+      "split": "dev",
+      "gold_page": [
+        154
+      ],
+      "evidence_found_on": [
+        154
+      ],
+      "filter": null
+    },
+    {
+      "id": "d17",
+      "split": "dev",
+      "gold_page": [
+        175
+      ],
+      "evidence_found_on": [
+        175
+      ],
+      "filter": null
+    },
+    {
+      "id": "d18",
+      "split": "dev",
+      "gold_page": [
+        186
+      ],
+      "evidence_found_on": [
+        186
+      ],
+      "filter": {
+        "ip_type": "trade_secret"
+      }
+    },
+    {
+      "id": "t01",
+      "split": "test",
+      "gold_page": [
+        132
+      ],
+      "evidence_found_on": [
+        132
+      ],
+      "filter": null
+    },
+    {
+      "id": "t02",
+      "split": "test",
+      "gold_page": [
+        162
+      ],
+      "evidence_found_on": [
+        162
+      ],
+      "filter": {
+        "ip_type": "trademark"
+      }
+    },
+    {
+      "id": "t03",
+      "split": "test",
+      "gold_page": [
+        185
+      ],
+      "evidence_found_on": [
+        185
+      ],
+      "filter": {
+        "ip_type": "trade_secret"
+      }
+    },
+    {
+      "id": "t04",
+      "split": "test",
+      "gold_page": [
+        153
+      ],
+      "evidence_found_on": [
+        153
+      ],
+      "filter": null
+    },
+    {
+      "id": "t05",
+      "split": "test",
+      "gold_page": [
+        67
+      ],
+      "evidence_found_on": [
+        67
+      ],
+      "filter": null
+    },
+    {
+      "id": "t06",
+      "split": "test",
+      "gold_page": [
+        122
+      ],
+      "evidence_found_on": [
+        122
+      ],
+      "filter": null
+    }
+  ]
+}

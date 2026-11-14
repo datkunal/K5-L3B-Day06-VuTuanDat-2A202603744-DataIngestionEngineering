@@ -1,0 +1,19 @@
+strategy,id,question,auto_hit3,grounding_0_2,reason
+A,t01,Can an author use a Creative Commons license to restrict other people's fair use of the work?,1,2,Rank 1 (p132) states CC licenses cannot limit rights such as fair use; traceable to page/section 3.10.
+B,t01,Can an author use a Creative Commons license to restrict other people's fair use of the work?,1,2,Rank 1 (p132) contains the full statement; source/page traceable.
+C,t01,Can an author use a Creative Commons license to restrict other people's fair use of the work?,1,2,Same as B (no filter for this question).
+A,t02,Why do owners almost always insist on an injunction rather than relying on money damages when infringed?,1,2,"Rank 1 (p162) gives the reason: brand reputation, not revenue. Ranks 2-3 are copyright/patent noise."
+B,t02,Why do owners almost always insist on an injunction rather than relying on money damages when infringed?,1,2,Evidence at rank 2 (p162); rank 1 is a copyright remedies chunk (p120) that could mislead an answer about trademarks.
+C,t02,Why do owners almost always insist on an injunction rather than relying on money damages when infringed?,1,2,ip_type=trademark filter: all three chunks from p162; rank 1 holds the reputation reason plus the Nike example.
+A,t03,How do courts decide how long an injunction should last?,1,2,Rank 2 (p185) contains the duration rule (time for a competitor to reveal the secret by proper means) and the termination condition.
+B,t03,How do courts decide how long an injunction should last?,0,1,"Equivalent evidence only: p185 says duration is calculated from the time needed for independent development (""head start""), but the termination condition is missing and rank 1 is a patent appeals chunk (p92). Gold table-cell chunk not retrieved."
+C,t03,How do courts decide how long an injunction should last?,0,2,Filter removed the patent chunk; p185 gives the head-start/independent-development basis and p184 adds that the injunction terminates when the secret ceases to exist. Gold table-cell wording not retrieved (auto Hit@3 = 0) but evidence is equivalent and sufficient.
+A,t04,Can a descriptive term ever become eligible for trademark registration?,0,2,Rank 1 (p153) says descriptive marks are not registrable unless they acquire secondary meaning; rank 3 continues with the Sharp/Windows examples. Gold quote is split across the two chunks.
+B,t04,Can a descriptive term ever become eligible for trademark registration?,1,2,Rank 1 (p153) contains the full rule and examples in one chunk.
+C,t04,Can a descriptive term ever become eligible for trademark registration?,1,2,Same as B.
+A,t05,Can a product still infringe a patent claim if it does not literally match every element of the claim?,1,2,Rank 3 (p67) contains the full doctrine-of-equivalents test; rank 1 is the same page but a different window.
+B,t05,Can a product still infringe a patent claim if it does not literally match every element of the claim?,1,2,Rank 1 (p67) contains the doctrine-of-equivalents test.
+C,t05,Can a product still infringe a patent claim if it does not literally match every element of the claim?,1,2,Same as B.
+A,t06,"Under the classroom photocopying brevity test, how many words of a poem may be copied?",1,2,Rank 1 (p122) gives the 250-word limit for poems.
+B,t06,"Under the classroom photocopying brevity test, how many words of a poem may be copied?",1,2,Rank 1 (p122) gives the 250-word limit with the other brevity limits.
+C,t06,"Under the classroom photocopying brevity test, how many words of a poem may be copied?",1,2,Same as B.

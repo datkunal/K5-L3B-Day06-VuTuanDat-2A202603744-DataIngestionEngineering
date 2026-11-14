@@ -1,4 +1,7 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
-psycopg[binary]==3.3.8
-pypdf>=5,<7
-python-dotenv>=1,<2
+# Versions used for the submitted run (Python 3.12.4, Windows 10, CPU only).
+pypdf==5.0.0
+pypdfium2==4.30.0
+chromadb==1.5.9
+sentence-transformers==6.2.0
+torch==2.15.0
+numpy==2.2.6

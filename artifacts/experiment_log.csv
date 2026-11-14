@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size characters per page,500,50,"document_id, source, page, printed_page, chapter, ip_type, section, section_title, char_start/end, content_sha1",none,"intfloat/multilingual-e5-base (768d, local CPU, cosine, Chroma 1.5.9 HNSW)","Baseline: fixed windows cut sentences/evidence, so Evidence Hit@3 and coherence should be lower than B",10/18,16/18,3/6,5/6,"1008 chunks, mean 467 chars / 115 tokens; embed 176.7 s; coherence 0.9/2; d09 and t04 evidence split across windows"
+B,paragraph packing per page (section heading forces new chunk; oversized paragraph split at sentences),1000 max,0,same as A,none,same as A,"Keeping whole paragraphs improves coherence and evidence completeness with ~40% fewer chunks",13/18,17/18,4/6,5/6,"599 chunks, mean 713 chars / 172 tokens; embed 150.6 s; coherence 1.8/2; unfiltered top-3 often mixes IP types (d14, t02, t03)"
+C,same chunks and vectors as B,1000 max,0,same as A,"ip_type equality filter, only when the question supplies one (6/24 questions)",same as A,"Only difference vs B is the metadata filter: removes cross-IP-type distractors on ambiguous questions (fair use, injunctions, remedies)",14/18,17/18,5/6,5/6,"Chosen on dev (tie on Hit@3 with B, wins Hit@1). Filter compliance 4/4 dev, 2/2 test. t03 gold table-cell chunk missed (equivalent prose evidence retrieved)"

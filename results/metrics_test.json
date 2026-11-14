@@ -1,0 +1,39 @@
+{
+  "run_at": "2026-11-14T06:59:31+00:00",
+  "split": "test",
+  "model": "intfloat/multilingual-e5-base",
+  "top_k": 3,
+  "query_seconds_total": 0.87,
+  "rows": [
+    {
+      "strategy": "A",
+      "split": "test",
+      "N": 6,
+      "hit1": 3,
+      "hit3": 5,
+      "gold_page_top3": 6,
+      "filter_questions": 0,
+      "filter_compliant": 0
+    },
+    {
+      "strategy": "B",
+      "split": "test",
+      "N": 6,
+      "hit1": 4,
+      "hit3": 5,
+      "gold_page_top3": 6,
+      "filter_questions": 0,
+      "filter_compliant": 0
+    },
+    {
+      "strategy": "C",
+      "split": "test",
+      "N": 6,
+      "hit1": 5,
+      "hit3": 5,
+      "gold_page_top3": 6,
+      "filter_questions": 2,
+      "filter_compliant": 2
+    }
+  ]
+}
